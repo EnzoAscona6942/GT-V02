@@ -37,3 +37,6 @@ Route::middleware(['auth', 'can:admin,App\\Models\\User'])->group(function () {
 Route::get('/admin/talleres', TalleresAdmin::class)->name('admin.talleres');
 Route::get('/admin/usuarios', UsuariosAdmin::class)->name('admin.usuarios');
 });
+Route::get('/sobre-nosotros', function () {
+    return view('sobre-nosotros');
+})->name('sobre.nosotros');

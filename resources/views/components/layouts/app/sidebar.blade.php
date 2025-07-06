@@ -8,7 +8,7 @@
             <flux:sidebar.toggle class="lg:hidden" icon="x-mark" />
 
             <a href="{{ route('dashboard') }}" class="me-5 flex items-center space-x-2 rtl:space-x-reverse" wire:navigate>
-                <x-app-logo />
+                <img src="/logoside.png" alt="Logo App" class="h-12 w-auto max-w-[140px] object-contain drop-shadow-md" style="background:transparent;">
             </a>
 
             <flux:navlist variant="outline">
@@ -26,7 +26,10 @@
             <flux:spacer />
 
             <flux:navlist variant="outline">
-                <flux:navlist.item icon="folder-git-2" href="https://github.com/laravel/livewire-starter-kit" target="_blank">
+                <flux:navlist.item icon="user-group" :href="route('sobre.nosotros')" wire:navigate>
+                {{ __('Quienes somos') }}
+                </flux:navlist.item>
+                <flux:navlist.item icon="folder-git-2" href="https://github.com/EnzoAscona6942/GT-V02" target="_blank">
                 {{ __('Repositorio') }}
                 </flux:navlist.item>
 
