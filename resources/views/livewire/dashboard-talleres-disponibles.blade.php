@@ -18,9 +18,15 @@
                     </div>
                     <div>
                         @if(in_array($taller->id, $inscripciones))
+<<<<<<< HEAD
                             <span class="text-green-600 font-semibold">Inscripto</span>
                         @else
                             <x-flux-button wire:click="inscribirse({{ $taller->id }})" variant="primary" color="violet">Inscribirse</x-flux-button>
+=======
+                            <span class="text-green-600 font-semibold">Inscrito</span>
+                        @else
+                            <x-flux-button wire:click="inscribirse({{ $taller->id }})" color="primary">Inscribirse</x-flux-button>
+>>>>>>> 6e25da2 (eso si)
                         @endif
                     </div>
                 </div>
