@@ -16,7 +16,7 @@
                             <form method="POST" action="{{ route('mis-talleres.eliminar', $taller->id) }}" onsubmit="return confirm('¿Seguro que deseas eliminar tu inscripción a este taller?')">
                                 @csrf
                                 @method('DELETE')
-                                <x-flux-button type="submit" color="danger">Eliminar</x-flux-button>
+                                <x-flux-button type="submit" variant="danger">Eliminar</x-flux-button>
                             </form>
                         </div>
                     @endforeach
